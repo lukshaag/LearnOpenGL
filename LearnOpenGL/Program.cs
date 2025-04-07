@@ -35,9 +35,11 @@ public class Program : GameWindow {
         new Program(gws, nws).Run();
     }
 
-    private void processInput() { 
-        if(KeyboardState.IsAnyKeyDown(Keys.Escape)) {
-            Close();
+    private void processInput() {
+        if (KeyboardState.IsAnyKeyDown) {
+            if (KeyboardState.IsKeyDown(Keys.Escape)) {
+                Close();
+            }
         }
     }
 
